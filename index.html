@@ -27,7 +27,27 @@
             border-radius: 8px;
             border: 1px solid #383b4e;
         }
-        h2 { color: #ffffff; }
+        h2 { color: #ffffff; margin-top: 0; }
+        
+        /* New Code for Images */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-top: 15px;
+            border: 1px solid #d0d6f9;
+        }
+        
+        /* New Code for the Equation Box */
+        .equation {
+            background: #000;
+            padding: 10px;
+            border-left: 3px solid #d0d6f9;
+            font-size: 1.2em;
+            margin: 10px 0;
+            font-family: serif;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -38,7 +58,10 @@
         <div class="theory-card">
             <h2>01. Gargantua (The Black Hole)</h2>
             <p>Gargantua is a supermassive rotating black hole. It spins at 99.8% the speed of light.</p>
-            <p><strong>Key Concept:</strong> Gravitational Lensing. The massive gravity bends light around the hole, creating the "halo" effect we see.</p>
+            
+            <img src="gargantua.jpg" alt="Gargantua Black Hole">
+            
+            <p style="margin-top: 15px;"><strong>Key Concept:</strong> Gravitational Lensing. The massive gravity bends light around the hole, creating the "halo" effect we see.</p>
         </div>
 
         <div class="theory-card">
@@ -46,6 +69,20 @@
             <p>Due to the intense gravity near Gargantua, time moves slower relative to Earth.</p>
             <p><strong>The Cost:</strong> 1 hour on Miller's Planet = 7 years on Earth.</p>
         </div>
+
+        <div class="theory-card">
+            <h2>03. General Relativity</h2>
+            <img src="einstein.jpg" alt="Albert Einstein">
+            
+            <p style="margin-top: 15px;">The foundation of the mission. Einstein discovered that massive objects (like stars or black holes) cause space-time to curve.</p>
+            
+            <p><strong>The Field Equation:</strong></p>
+            <div class="equation">
+                G<sub>μν</sub> + Λg<sub>μν</sub> = κT<sub>μν</sub>
+            </div>
+            <p>This equation describes how matter tells space-time how to curve, and how curved space-time tells matter how to move.</p>
+        </div>
+
     </div>
 </body>
 </html>
